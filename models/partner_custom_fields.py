@@ -57,7 +57,7 @@ class PartnerCustomFields(models.Model):
 													   ('Recomendación', 'Recomendación'), '¿Cómo supo de nosotros?'])
   
   
-  pharmadan_domicilio_fiscal  = fields.Char(string="Domicilio Fiscal", help="Domicilio Fiscal de la empresa")
+  pharmadan_domicilio_fiscal  = fields.Text(string="Domicilio Fiscal", help="Domicilio Fiscal de la empresa")
   pharmadan_rfc               = fields.Char(string="RFC", help="RFC de la empresa")
   pharmadan_razon_social      = fields.Char(string="Razón Social", help="Razón Social de la empresa")
 
