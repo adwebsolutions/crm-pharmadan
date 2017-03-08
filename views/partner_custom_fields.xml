@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+      <record id="adw_view_partners_form_crm" model="ir.ui.view">
+          <field name="name">view.res.partner.form.crm.inherited1</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="base.view_partner_form"/>
+          <field name="arch" type="xml">
+            <field name="category_id" position="after">
+                <hr attrs="{'invisible':[('is_company', '=', False)]}" />
+                <h2 attrs="{'invisible':[('is_company', '=', False)]}" > Otros datos de la Empresa </h2>
+                <field name="pharmadan_rfc" placeholder="Código RFC"   attrs="{'invisible':[('is_company', '=', False)]}" />
+                <field name="pharmadan_razon_social" placeholder="Razón Social"   attrs="{'invisible':[('is_company', '=', False)]}"  />
+                <field name="pharmadan_domicilio_fiscal" placeholder="Domicilio Fiscal"   attrs="{'invisible':[('is_company', '=', False)]}"  />
+                <field name="pharmadan_descuento" placeholder="Descuento"   attrs="{'invisible':[('is_company', '=', False)]}"  />
+                <field name="pharmadan_forma_de_pago" placeholder="Forma de Pago"   attrs="{'invisible':[('is_company', '=', False)]}"  />
+                <field name="pharmadan_ultimos_digitos" placeholder="Últimos Dígitos"   attrs="{'invisible':[('is_company', '=', False)]}"  />
+                <field name="pharmadan_productos_surtidos" placeholder="Productos Surtidos"   attrs="{'invisible':[('is_company', '=', False)]}"  />
+                <field name="pharmadan_como_supo" placeholder="¿Cómo supo de nosotros?"   attrs="{'invisible':[('is_company', '=', False)]}"  />
+            </field>
+          </field>
+      </record>
+  </data>
+</openerp>
