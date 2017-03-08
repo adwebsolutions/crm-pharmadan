@@ -50,11 +50,11 @@ class PartnerCustomFields(models.Model):
   pharmadan_forma_de_pago    = fields.Char(string="Forma de Pago", help="Forma de pago para la factura fiscal")
   pharmadan_ultimos_digitos    = fields.Char(string="Últimos Dígitos", help="Últimos Dígitos de la cuenta desde la que pagará")
   pharmadan_productos_surtidos    = fields.Text(string="Productos Surtidos", help="Listado de productos que se venden a este cliente")
-  pharmadan_como_supo    = fields.Selection(selection=[('Contacto del cliente', 'Contacto del cliente'),
-													   ('Contacto por nuestro vendedor', 'Contacto por nuestro vendedor'),
-													   ('Evento (EXPO)', 'Evento (EXPO)'),
-													   ('Por página web', 'Por página web'),
-													   ('Recomendación', 'Recomendación')])
+  pharmadan_como_supo    = fields.Selection(selection=[('contacto_cliente', 'Contacto del cliente'),
+													   ('contacto_vendedor', 'Contacto por nuestro vendedor'),
+													   ('evento_expo', 'Evento (EXPO)'),
+													   ('pagina_web', 'Por página web'),
+													   ('recomendacion', 'Recomendación')])
   
   pharmadan_domicilio_fiscal  = fields.Text(string="Domicilio Fiscal", help="Domicilio Fiscal de la empresa")
   pharmadan_rfc               = fields.Char(string="RFC", help="RFC de la empresa")
