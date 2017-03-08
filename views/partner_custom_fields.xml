@@ -18,7 +18,7 @@
             <field name="website" position="after">
                 <field name="pharmadan_descuento" placeholder="Descuento"   attrs="{'invisible':[('is_company', '=', False)]}"  />
                 <field name="pharmadan_productos_surtidos" placeholder="Productos Surtidos"   attrs="{'invisible':[('is_company', '=', False)]}"  />
-                <field name="pharmadan_como_supo" attrs="{'invisible':[('is_company', '=', False)]}"  placeholder="¿Cómo supo de nosotros?" />
+                <field name="pharmadan_como_supo" attrs="{'invisible':[('is_company', '=', False)]}" string="¿Cómo supo de nosotros?" />
             </field>
           </field>
       </record>
